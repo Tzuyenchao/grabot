@@ -76,13 +76,12 @@ print(pick_res)
 driver.find_element_by_xpath('//*[@id="validateStr"]').send_keys(pick_res)
 time.sleep(input_timeout)
 
-# driver.find_element_by_xpath('//*[@id="command"]/div[2]/div/div/div/table/tbody[1]/tr[12]/td/input[1]').click()
 button_1 = driver.find_element(by=By.XPATH, value='//*[@id="command"]/div[2]/div/div/div/div/a[1]')
 time.sleep(input_timeout)
 ActionChains(driver).move_to_element(button_1).click(button_1).perform()
 time.sleep(input_timeout)
 
 
-time.sleep(10)
+time.sleep(5)
 print('finish')
 
